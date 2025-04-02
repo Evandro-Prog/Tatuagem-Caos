@@ -1,0 +1,229 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header span {
+    color: #f39c12;
+    /* Cor dourada */
+}
+
+/* Navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f39c12;
+    /* Cor dourada */
+}
+
+/* Seção Principal */
+main {
+    position: relative;
+    text-align: center;
+}
+
+/* Imagem de fundo */
+.background-img img {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+}
+
+/* Vídeo do processo criativo */
+.criative-process video {
+    width: 80%;
+    height: auto;
+    margin-top: -60px;
+    /* Para cobrir o fundo */
+}
+
+/* Apresentação do Estúdio */
+.studio-presentation {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.studio-presentation h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.studio-presentation span {
+    color: #f39c12;
+    /* Cor dourada */
+}
+
+/* Sobre mim */
+.about-me {
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-between;
+    background-color: #222;
+}
+
+.about-me div {
+    flex: 2;
+    margin: 50px 100px;
+       
+}
+
+.about-me img {
+    width: 60%;
+    height: auto;
+    border-radius: 200px;    
+    border: 2px solid  #f39c12;
+}
+
+.about-me .about {
+    margin-top: 100px;
+    font-size: 2rem;
+    margin-bottom: 10px;    
+}
+
+.about-me p {    
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* Seção de Carrossel */
+.carrossel-container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrossel {
+    display: flex;    
+    gap: 50px
+}
+
+.carrossel img {
+    width: 100%;
+   
+    object-fit: cover;
+    display: block;
+    height: 300px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-100%);
+    }
+
+    40% {
+        transform: translateX(-200%);
+    }
+
+    60% {
+        transform: translateX(-300%);
+    }
+
+    80% {
+        transform: translateX(-400%);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+.carrossel {
+    animation: slide 20s linear infinite;
+}
+
+.carrossel-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.carrossel-container a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carrossel img:hover {
+    transform: scale(1.1);
+}
+
+/* Seção de Contato */
+.contact-us {
+    background-color: #333;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us div {
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contact-us button {
+    width: 400px;
+    padding: 15px;
+    font-size: 1.2rem;
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.contact-us button:hover {
+    background-color: #e67e22;
+}
