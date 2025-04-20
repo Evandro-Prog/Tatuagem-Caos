@@ -151,7 +151,6 @@ main img {
 
 .carrossel img {
     width: 100%;
-
     object-fit: cover;
     display: block;
     height: 300px;
@@ -290,7 +289,7 @@ main img {
       text-align: center;
       font-size: 1rem;
       padding: 0 10px;
-    }
+    }   
   
     .carrossel {
       display: flex;
